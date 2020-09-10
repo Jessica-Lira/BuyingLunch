@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Who's Buying Lunch?</title>
+
+    <script>
+        
+        var persons = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+
+        function whosPaying(names) {
+
+            //random number generation
+            var numberOfPeople = names.length;
+            var randomName = Math.floor(Math.random()*numberOfPeople); 
+            var namePerson = names[randomName];
+
+            console.log( namePerson + " is going to buy lunch today!");
+            return namePerson + " is going to buy lunch today!";
+        }
+       whosPaying(persons);
+
+    </script>
+</head>
+<body>
+    <h1>Who's Buying Lunch?</h1>
+    <p>a function which will select a random name from a list of names.
+        The person selected will have to pay for everybody's food bill.</p>
+</body>
+</html>
